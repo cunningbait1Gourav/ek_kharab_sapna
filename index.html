@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+		<title>
+				Home
+		</title>
+	</head>
+	<body class="light">
+				<navbar>
+			<div class="hide-inv">
+				<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">	<img src="menu.png" height="25px" width="25px"></button>
+
+			<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  					<div class="offcanvas-header">
+    					<h5 id="offcanvasTopLabel">Menu</h5>
+    				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  					</div>
+  <div class="offcanvas-body flexed">
+				<div class="re"><a href="./index.html">Home</a></div>
+				<div class="re" id="active"><a href="./products.html">Products</a></div>
+				<div class="re"><a href="./cart.html">Cart</a></div>
+				<div class="re"><a href="./error.html">Contact us</a></div>
+				<div class="re">
+					<svg onclick="dark()" id="change" height="30px" width="30px">
+						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
+						<circle cx="17" cy="6" r="8" fill="white" />
+					</svg>
+				</div>
+  </div>
+</div>
+
+			</div>
+			<div id="menu">
+				<div><input type="text" id="search"></div>
+				<div><button id="button1">Search</button></div>
+			</div>
+			<div class="flex">
+				<div class="re hide"><a href="./index.html">Home</a></div>
+				<div class="re hide"><a href="./error.html">About</a></div>
+				<div class="re hide" id="active"><a href="./products.html">Products</a></div>
+				<div class="re hide"><a href="./cart.html">Cart</a></div>
+				<div class="re hide"><a href="./error.html">Contact us</a></div>
+				<div class="re hide">
+					<svg onclick="dark()" id="change" height="30px" width="30px">
+						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
+						<circle cx="17" cy="6" r="8" fill="white" />
+					</svg>
+				</div>
+			</div>
+
+		</navbar>
+		
+		<div id="banner" class="hide">
+			<div id="text1" class="hide" data-aos="fade-right">
+				Get Your Favourite<br>Items Delivered<br>At Your Doorsteps.
+			</div>
+			<div data-aos="fade-left">
+				<img src="showcase1.jpg" id="img1" class="hide">
+			</div>
+		</div>
+		<br>
+		<div class="flexed">
+			<div data-aos="fade-right">
+				<img src="sale.jpg" class="img2">
+			</div>
+			<div class="big" data-aos="fade-left">
+				25% Discount<br>This Festive Season<br><p id="small">*Terms and conditions applied</p>
+			</div>
+		</div>
+		<br>
+		<div class="flexed2">
+			<div class="big" data-aos="fade-right">
+				Touchless<br>Packaging And<br>Delivery
+			</div>
+			<div data-aos="fade-left">
+				<img src="festive.jpg" class="img2">
+			</div>
+		</div>
+		<br>
+		<div class="flexed">
+			<div>
+				<img src="svg-market.jpeg" class="img2" data-aos="fade-right">
+			</div>
+			<div class="big" data-aos="fade-left">
+				Compare From<br>Best Brands Available<br>
+			</div>
+		</div>
+		<br>
+		<div class="flexed2">
+			<div class="big" data-aos="fade-right">
+				What are you<br>Waiting For?<br>Hurry Up
+			</div>
+			<div data-aos="fade-left">
+				<img src="svg-hurry.jpeg" class="img2">
+			</div>
+		</div>
+		<br>
+			<div class="flexed">
+				<div data-aos="fade-right"><img src="shweta.jpeg" class="img2"></div>
+				<div data-aos="fade-left"><img src="gourav.jpg" class="img2"></div>
+		</div>
+					<div class="flexed">
+				<div class="big" data-aos="fade-right">Founder CEO at MY Shop India<h3>Shweta Swaraj</h3></div>
+				<div class="big" data-aos="fade-left">Co-Founder at MY Shop India<h3>Gourav Sonkar</h3></div>
+		</div>
+		<br>
+		<br>
+<div class="flexed" id="foot-light">
+	<div>Copyright:<br> all rights reserved</div>
+	<div>For Enquiry call:<br> 1800-000-234<br>toll free</div>
+</div>
+
+		
+		<script>
+		var q=0;
+		function dark()
+		{
+			if(q==0)
+				{
+					document.querySelectorAll("#change")[0].innerHTML=`<circle cx="15" cy="10" r="10" fill="yellow" />`;
+					document.querySelectorAll("#change")[1].innerHTML=`<circle cx="15" cy="10" r="10" fill="yellow" />`;
+					document.querySelector("body").classList.replace("light","dark");
+					document.querySelector("#foot-light").id="foot-dark";
+					document.querySelector("#active").id="active-dark";
+					q=1;
+
+				}
+			else
+				{
+					document.querySelectorAll("#change")[0].innerHTML=`	<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
+						<circle cx="17" cy="6" r="8" fill="white" />`;
+						document.querySelectorAll("#change")[1].innerHTML=`	<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
+						<circle cx="17" cy="6" r="8" fill="white" />`;
+						document.querySelector("body").classList.replace("dark","light");
+						document.querySelector("#foot-dark").id="foot-light";
+						document.querySelector("#active-dark").id="active";
+						q=0;
+				}
+
+		}
+		AOS.init({
+ 		 duration: 1200,
+		})
+	</script>
+	</body>
+</html>

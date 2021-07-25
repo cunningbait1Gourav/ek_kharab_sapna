@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+		<title>
+			Product page
+		</title>
+	</head>
+	<body class="light">
+		
+		<navbar>
+			<div class="hide-inv">
+				<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">	<img src="menu.png" height="25px" width="25px"></button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel">Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body flexed">
+				<div class="re"><a href="./index.html">Home</a></div>
+				<div class="re" id="active"><a href="./products.html">Products</a></div>
+				<div class="re"><a href="./cart.html">Cart</a></div>
+				<div class="re"><a href="./error.html">Contact us</a></div>
+				<div class="re">
+					<svg onclick="dark()" id="change" height="30px" width="30px">
+						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
+						<circle cx="17" cy="6" r="8" fill="white" />
+					</svg>
+				</div>
+  </div>
+</div>
+			</div>
+			<div id="menu">
+				<div><input type="text" id="search"></div>
+				<div><button id="button1">Search</button></div>
+			</div>
+			<div class="flex">
+				<div class="re hide"><a href="./index.html">Home</a></div>
+				<div class="re hide"><a href="./error.html">About</a></div>
+				<div class="re hide" id="active"><a href="./products.html">Products</a></div>
+				<div class="re hide"><a href="./cart.html">Cart</a></div>
+				<div class="re hide"><a href="./error.html">Contact us</a></div>
+				<div class="re hide">
+					<svg onclick="dark()" id="change" height="30px" width="30px">
+						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
+						<circle cx="17" cy="6" r="8" fill="white" />
+					</svg>
+				</div>
+			</div>
+
+		</navbar>
+
+		<br>
+		<br>
+		<section>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product1.jpg" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>Mac book 13'3"</h1>
+				<h2>2019 Apple Mac Book Pro (16-inch/40.65cm ,16 GB RAM , 1TB SSD, Internal storage 2TB</h2>
+				<h2>Price:Rs 2,13,999</h2>
+				<br>
+				<button class="button" onclick="changer(prod1)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+		<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product2.jpg" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>APPLE iPhone 12 Pro Max</h1>
+				<h2>Apple iphone 12 pro max ,128 GB ROM,17.02cm,12mp+12mp+12mp |12mp front camera,A14 bionic chip </h2>
+				<h2>Price:1,25,900</h2>
+			        <br>
+				<button class="button" onclick="changer(prod2)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product3.jpg" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>Sareee</h1>
+				<h2>Indian saree,solid fashion synthetic saree(rose pink,bottle green,black,blue)</h2>
+				<h2>Price:Rs 6,499</h2>
+                                <h3>53% OFF</h3>
+				<br>
+				<button class="button" onclick="changer(prod3)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product4.jpg" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>ADIDAS</h1>
+				<h2>Genuine products of adidas India Marketing Private Ltd.</h2>
+                                <h3>Both for men and women</h3>
+				<h2>Price:2,157 </h2>
+				<br>
+				<button class="button" onclick="changer(prod4)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product5.jpg" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>Sling Bag</h1>
+				<h1>WOMEN MARKS Girls & women sling bag</h1>
+				<h2>Price:Rs 9,999</h2>
+				<br>
+				<button class="button" onclick="changer(prod5)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product6.jpg" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>APPLE Airpods</h1>
+				<h2>APPLE Airpods Pro with wireless charging case Active noise cancellation enabled Bluetooth Headset(White,True wireless)</h2>
+				<h2>Price:Rs 20,999</h2>
+				<br>
+				<button class="button" onclick="changer(prod6)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product7.jpg" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>Skybag</h1>
+				<h2>SKYBAGS BRAT 10 SCHOOL BAG(E)LT. BLUE 25L Backpack</h2>
+				<h2>Price:Rs 1,549</h2>
+				<br>
+				<button class="button" onclick="changer(prod7)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product8.jpg" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>mCaffeine</h1>
+				<h2>Naked and Raw Coffee Face Wash,100ml</h2>
+                                <h3>Give your face the daily boost of clear freshness withmCaffiene Naked & Raw Coffee Face Wash with a deep cleansing formula</h3>
+				<h2>Price:Rs 524</h2>
+				<br>
+				<button class="button" onclick="changer(prod8)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product9.webp" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>SHIRT</h1>
+				<h2>Mens casual wear shirt,brown and black slim fit</h2>
+				<h2>Price:Rs 1127</h2>
+				<br>
+				<button class="button" onclick="changer(prod9)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product10.jpg" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>SASSAFRAS</h1>
+				<h2>Women Sheath pink dress</h2>
+				<h2>Price:Rs 14,545</h2>
+				<br>
+				<button class="button" onclick="changer(prod10)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<br>
+		<br>
+		<div style="border-width:2px;border-color:black;display:flex;justify-content
+		:space-evenly;">
+			<div class="product">
+			<div><img src="product11.jfif" class="prod-img"></div>
+			<div style="padding-left:20px">
+				<h1>APPLE Watch</h1>
+				<h2> Apple Watch Series 6 GPS 44mm </h2>
+                                <h3>Blue aluminium Case with Deep Navy Sport Band(Blue Strap,Regular)</h3>
+				<h2>Price:Rs 43,000</h2>
+				<br>
+				<button class="button" onclick="changer(prod11)">Buy Now</button>
+			</div>
+			</div>
+		</div>
+	</section>
+	<br>
+	<br>
+<div class="flexed" id="foot-light">
+	<div>Copyright:<br> all rights reserved</div>
+	<div>For Enquiry call:<br> 1800-000-234<br>toll free</div>
+</div>
+
+	<script src="app.js">
+
+	</script>	
+		<script>
+		var q=0;
+		function dark()
+		{
+			if(q==0)
+				{
+					q=1
+				document.querySelectorAll("#change")[0].innerHTML=`<circle cx="15" cy="10" r="10" fill="yellow" />`;
+					document.querySelectorAll("#change")[1].innerHTML=`<circle cx="15" cy="10" r="10" fill="yellow" />`;
+					document.querySelector("body").classList.replace("light","dark");
+					document.querySelector("#foot-light").id="foot-dark";
+					document.querySelectorAll(".product").forEach(loop)
+
+					function loop(item)
+					{item.classList.replace("product","product-dark");
+					}
+					document.querySelector("#active").id="active-dark";
+						document.querySelector(".product-info").classList.replace("product-info","product-info_dark");
+				}
+			else
+				{
+					q=0;
+				document.querySelectorAll("#change")[0].innerHTML=`	<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
+						<circle cx="17" cy="6" r="8" fill="white" />`;
+						document.querySelectorAll("#change")[1].innerHTML=`	<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
+						<circle cx="17" cy="6" r="8" fill="white" />`;
+						document.querySelector("body").classList.replace("dark","light");
+						document.querySelector("#foot-dark").id="foot-light";
+					document.querySelectorAll(".product-dark").forEach(loop)
+
+					function loop(item)
+					{item.classList.replace("product-dark","product");}
+					document.querySelector("#active-dark").id="active";
+						document.querySelector(".product-info_dark").classList.replace("product-info_dark","product-info");
+				}
+
+
+		}
+		function changer(g)
+		{
+			document.querySelector("section").innerHTML=`		<div class="product-info">
+			<div class="flexed">
+			<div><img src="product${g.no}.jpg" class="big-img"></div>
+			<div><div class="big">${g.name}</div>
+			<br>
+			${g.desc}
+			FEATURES
+			<ul>
+				<li>${g.feat1}</li>
+				<li>${g.feat2}</li>
+				<li>${g.feat3}</li>
+				<li>${g.feat4}</li>
+			</ul>
+			<br><br>
+			<button class="button1">Buy Now</button>
+			</div>
+			</div>
+			<div class="center">
+				<br>
+				<h1>Ratings</h1>
+				<br>
+				<div class="flexed"><h1>Customer satisfaction</h1></div>
+				<br>
+				<div class="flexed"><div class="box"><div class="rating" style="width:${g.rate1}"></div></div></div>
+				<br>
+				<br>
+				<div class="flexed"><h1>Quality</h1></div>
+				<br>
+				<div class="flexed"><div class="box"><div class="rating" style="width:${g.rate2}"></div></div></div>
+				<br>
+				<br>
+				<div class="flexed"><h1>Overall</h1></div>
+				<br>
+				<div class="flexed"><div class="box"><div class="rating" style="width:${g.rate3}"></div></div></div>
+				<br>
+				<br><br><br>
+			</div>
+		</div>`;
+		g=null;
+		}
+		AOS.init({
+ 		 duration: 1200,
+		})
+	</script>
+	</body>
+</html>
