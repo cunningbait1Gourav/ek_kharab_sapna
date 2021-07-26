@@ -85,6 +85,7 @@
 					document.querySelectorAll("#change")[1].innerHTML=`<circle cx="15" cy="10" r="10" fill="yellow" />`;
 					document.querySelector("body").classList.replace("light","dark");
 					document.querySelector("#foot-light").id="foot-dark";
+					document.querySelector(".offcanvas").classList.add("dark");
 					q=1;
 				}
 			else
@@ -95,6 +96,7 @@
 						<circle cx="17" cy="6" r="8" fill="white" />`;
 						document.querySelector("body").classList.replace("dark","light");
 						document.querySelector("#foot-dark").id="foot-light";
+						document.querySelector(".offcanvas").classList.remove("dark");
 						q=0;
 				}
 

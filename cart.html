@@ -104,6 +104,7 @@
 					document.querySelector(".product").classList.replace("product","product-dark");
 					document.querySelector("#foot-light").id="foot-dark";
 					document.querySelector("#active").id="active-dark";
+					document.querySelector(".offcanvas").classList.add("dark");
 					q=1;
 				}
 			else
@@ -116,6 +117,7 @@
 						document.querySelector("#foot-dark").id="foot-light";
 							document.querySelector(".product-dark").classList.replace("product-dark","product");
 							document.querySelector("#active-dark").id="active";
+						document.querySelector(".offcanvas").classList.remove("dark");
 						q=0;
 				}
 

@@ -7,6 +7,11 @@ a
 	text-decoration: none;
 	color:black;
 }
+a .dark
+{
+	text-decoration: none;
+	color:white; 
+}
 .product h1
 {
 	font-size:1.5rem;
@@ -16,6 +21,18 @@ a
 	font-size:1rem;
 }
 .product h3
+{
+	font-size:1rem;
+}
+.product-dark h1
+{
+	font-size:1.5rem;
+}
+.product-dark h2
+{
+	font-size:1rem;
+}
+.product-dark h3
 {
 	font-size:1rem;
 }
@@ -222,7 +239,7 @@ background-color: #fff;
 	display:flex;
 	flex-direction: row;
 	width:800px;
-	height:200px;
+	height:250px;
 	background-color:#3f3f40;
 	padding:30px;
 	font-family: Raleway,sans-serif;
@@ -383,6 +400,18 @@ h2
 	font-size:0.5rem;
 }
 .product h3
+{
+	font-size:0.5rem;
+}
+.product-dark h1
+{
+	font-size:0.75rem;
+}
+.product-dark h2 
+{
+	font-size:0.5rem;
+}
+.product-dark h3
 {
 	font-size:0.5rem;
 }

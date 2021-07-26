@@ -109,8 +109,8 @@
 				<div data-aos="fade-left"><img src="gourav.jpg" class="img2"></div>
 		</div>
 					<div class="flexed">
-				<div class="big" data-aos="fade-right">Founder CEO at MY Shop India<h3>Shweta Swaraj</h3></div>
-				<div class="big" data-aos="fade-left">Co-Founder at MY Shop India<h3>Gourav Sonkar</h3></div>
+				<div class="big" data-aos="fade-right">Founder CEO at MY Shop<h3>Shweta Swaraj</h3></div>
+				<div class="big" data-aos="fade-left">Co-Founder at MY Shop<h3>Gourav Sonkar</h3></div>
 		</div>
 		<br>
 		<br>
@@ -131,6 +131,7 @@
 					document.querySelector("body").classList.replace("light","dark");
 					document.querySelector("#foot-light").id="foot-dark";
 					document.querySelector("#active").id="active-dark";
+					document.querySelector(".offcanvas").classList.add("dark");
 					q=1;
 
 				}
@@ -143,6 +144,7 @@
 						document.querySelector("body").classList.replace("dark","light");
 						document.querySelector("#foot-dark").id="foot-light";
 						document.querySelector("#active-dark").id="active";
+						document.querySelector(".offcanvas").classList.remove("dark");
 						q=0;
 				}
 
