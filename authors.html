@@ -11,11 +11,12 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 		<title>
-				Home
+				Cart
 		</title>
 	</head>
 	<body class="light">
-				<navbar>
+		
+	<navbar>
 			<div class="hide-inv">
 				<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">	<img src="menu.png" height="25px" width="25px"></button>
 
@@ -25,10 +26,10 @@
     				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   					</div>
   <div class="offcanvas-body flexed">
-				<a href="./index.html"><div class="re" id="active">Home</div></a>
+				<a href="./index.html"><div class="re">Home</div></a>
 				<a href="./products.html"><div class="re">Products</div></a>
 				<a href="./cart.html"><div class="re">Cart</div></a>
-				<a href="./authors.html"><div class="re">Contact us</div></a>
+				<a href="./authors.html"><div class="re" id="active">Contact us</div></a>
 				<div class="re">
 					<svg onclick="dark()" id="change" height="30px" width="30px">
 						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
@@ -44,11 +45,11 @@
 				<div><button id="button1">Search</button></div>
 			</div>
 			<div class="flex">
-				<a href="./index.html"><div class="re hide" id="active">Home</div></a>
+				<a href="./index.html"><div class="re hide">Home</div></a>
 				<a href="./error.html"><div class="re hide">About</div></a>
 				<a href="./products.html"><div class="re hide">Products</div></a>
 				<a href="./cart.html"><div class="re hide">Cart</div></a>
-				<a href="./authors.html"><div class="re hide">Contact us</div></a>
+				<a href="./authors.html"><div class="re hide" id="active">Contact us</div></a>
 				<div class="re hide">
 					<svg onclick="dark()" id="change" height="30px" width="30px">
 						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
@@ -58,62 +59,43 @@
 			</div>
 
 		</navbar>
-		
-		<div id="banner" class="hide">
-			<div id="text1" class="hide" data-aos="fade-right">
-				Get Your Favourite<br>Items Delivered<br>At Your Doorsteps.
-			</div>
-			<div data-aos="fade-left">
-				<img src="showcase1.jpg" id="img1" class="hide">
-			</div>
-		</div>
-		<br>
-		<div class="flexed">
-			<div data-aos="fade-right">
-				<img src="sale.jpg" class="img2">
-			</div>
-			<div class="big" data-aos="fade-left">
-				25% Discount<br>This Festive Season<br><p id="small">*Terms and conditions applied</p>
-			</div>
-		</div>
-		<br>
-		<div class="flexed2">
-			<div class="big" data-aos="fade-right">
-				Touchless<br>Packaging And<br>Delivery
-			</div>
-			<div data-aos="fade-left">
-				<img src="festive.jpg" class="img2">
-			</div>
-		</div>
-		<br>
-		<div class="flexed">
-			<div>
-				<img src="svg-market.jpeg" class="img2" data-aos="fade-right">
-			</div>
-			<div class="big" data-aos="fade-left">
-				Compare From<br>Best Brands Available<br>
-			</div>
-		</div>
-		<br>
-		<div class="flexed2">
-			<div class="big" data-aos="fade-right">
-				What are you<br>Waiting For?<br>Hurry Up
-			</div>
-			<div data-aos="fade-left">
-				<img src="svg-hurry.jpeg" class="img2">
-			</div>
-		</div>
-		<br>
-			<div class="flexed">
-				<div data-aos="fade-right"><img src="shweta.jpeg" class="img2"></div>
-				<div data-aos="fade-left"><img src="gourav.jpg" class="img2"></div>
-		</div>
-					<div class="flexed">
-				<div class="big" data-aos="fade-right">Founder CEO at MY Shop<h3>Shweta Swaraj</h3></div>
-				<div class="big" data-aos="fade-left">Co-Founder at MY Shop<h3>Gourav Sonkar</h3></div>
-		</div>
-		<br>
-		<br>
+<div class="flexed center">
+
+<h1>Write About Your experience</h1>
+</div>
+
+<div class="flexed">
+<div class="small">
+		<form>
+  
+   <div class="mb-3">
+    <input type="text" class="form-control" id="password" placeholder="Name">
+  </div>
+  <div class="mb-3">
+    <input type="Email" class="form-control" id="password" placeholder="Email address">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" id="password" placeholder="Share your Experience">
+  </div>
+    <div class="mb-3">
+    <input type="text" class="form-control" id="suggestion" placeholder="Suggestions">
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" id="suggestion" placeholder="Complaints">
+  </div>
+  <div class="mb-3 form-check">
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+</div>
+</div>
+
+
+
+
+
+
+
 <div class="flexed" id="foot-light">
 	<div>Copyright:<br> all rights reserved</div>
 	<div>For Enquiry call:<br> 1800-000-234<br>toll free</div>
@@ -139,7 +121,6 @@
 							item.classList.add("an")
 					}
 					q=1;
-
 				}
 			else
 				{
@@ -151,8 +132,8 @@
 						document.querySelector("#foot-dark").id="foot-light";
 						document.querySelectorAll("#active-dark")[0].id="active";
 						document.querySelectorAll("#active-dark")[0].id="active";
+						document.querySelectorAll(".re").forEach(an2);
 						document.querySelector(".offcanvas").classList.remove("dark");
-							document.querySelectorAll(".re").forEach(an2);
 					function an2(item)
 					{
 							item.classList.remove("an")

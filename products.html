@@ -16,20 +16,20 @@
 	</head>
 	<body class="light">
 		
-		<navbar>
+<navbar>
 			<div class="hide-inv">
 				<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">	<img src="menu.png" height="25px" width="25px"></button>
 
-<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasTopLabel">Menu</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
+			<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  					<div class="offcanvas-header">
+    					<h5 id="offcanvasTopLabel">Menu</h5>
+    				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  					</div>
   <div class="offcanvas-body flexed">
-				<div class="re"><a href="./index.html">Home</a></div>
-				<div class="re" id="active"><a href="./products.html">Products</a></div>
-				<div class="re"><a href="./cart.html">Cart</a></div>
-				<div class="re"><a href="./error.html">Contact us</a></div>
+				<a href="./index.html"><div class="re">Home</div></a>
+				<a href="./products.html"><div class="re" id="active">Products</div></a>
+				<a href="./cart.html"><div class="re">Cart</div></a>
+				<a href="./authors.html"><div class="re">Contact us</div></a>
 				<div class="re">
 					<svg onclick="dark()" id="change" height="30px" width="30px">
 						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
@@ -38,17 +38,18 @@
 				</div>
   </div>
 </div>
+
 			</div>
 			<div id="menu">
 				<div><input type="text" id="search"></div>
 				<div><button id="button1">Search</button></div>
 			</div>
 			<div class="flex">
-				<div class="re hide"><a href="./index.html">Home</a></div>
-				<div class="re hide"><a href="./error.html">About</a></div>
-				<div class="re hide" id="active"><a href="./products.html">Products</a></div>
-				<div class="re hide"><a href="./cart.html">Cart</a></div>
-				<div class="re hide"><a href="./error.html">Contact us</a></div>
+				<a href="./index.html"><div class="re hide">Home</div></a>
+				<a href="./error.html"><div class="re hide">About</div></a>
+				<a href="./products.html"><div class="re hide" id="active">Products</div></a>
+				<a href="./cart.html"><div class="re hide">Cart</div></a>
+				<a href="./authors.html"><div class="re hide">Contact us</div></a>
 				<div class="re hide">
 					<svg onclick="dark()" id="change" height="30px" width="30px">
 						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
@@ -271,13 +272,19 @@
 					document.querySelectorAll("#change")[1].innerHTML=`<circle cx="15" cy="10" r="10" fill="yellow" />`;
 					document.querySelector("body").classList.replace("light","dark");
 					document.querySelector(".offcanvas").classList.add("dark");
+					document.querySelectorAll("#active")[0].id="active-dark";
+					document.querySelectorAll("#active")[0].id="active-dark";
 					document.querySelector("#foot-light").id="foot-dark";
+					document.querySelectorAll(".re").forEach(an);
+					function an(item)
+					{
+							item.classList.add("an")
+					}
 					document.querySelectorAll(".product").forEach(loop)
 
 					function loop(item)
 					{item.classList.replace("product","product-dark");
 					}
-					document.querySelector("#active").id="active-dark";
 						document.querySelector(".product-info").classList.replace("product-info","product-info_dark");
 				}
 			else
@@ -289,12 +296,18 @@
 						<circle cx="17" cy="6" r="8" fill="white" />`;
 						document.querySelector(".offcanvas").classList.remove("dark");
 						document.querySelector("body").classList.replace("dark","light");
+						document.querySelectorAll("#active-dark")[0].id="active";
+						document.querySelectorAll("#active-dark")[0].id="active";
 						document.querySelector("#foot-dark").id="foot-light";
+						document.querySelectorAll(".re").forEach(an2);
+					function an2(item)
+					{
+							item.classList.remove("an")
+					}
 					document.querySelectorAll(".product-dark").forEach(loop)
 
 					function loop(item)
 					{item.classList.replace("product-dark","product");}
-					document.querySelector("#active-dark").id="active";
 						document.querySelector(".product-info_dark").classList.replace("product-info_dark","product-info");
 				}
 
@@ -316,7 +329,8 @@
 				<li>${g.feat4}</li>
 			</ul>
 			<br><br>
-			<button class="button1">Buy Now</button>
+			<a href="error.html"><button class="button1">Buy Now</button></a>
+			<a href="error.html"><button class="button1">Add to cart</button></a>
 			</div>
 			</div>
 			<div class="center">

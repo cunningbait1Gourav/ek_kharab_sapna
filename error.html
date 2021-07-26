@@ -19,16 +19,16 @@
 			<div class="hide-inv">
 				<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">	<img src="menu.png" height="25px" width="25px"></button>
 
-<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasTopLabel">Menu</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
+			<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  					<div class="offcanvas-header">
+    					<h5 id="offcanvasTopLabel">Menu</h5>
+    				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  					</div>
   <div class="offcanvas-body flexed">
-				<div class="re"><a href="./index.html">Home</a></div>
-				<div class="re" id="active"><a href="./products.html">Products</a></div>
-				<div class="re"><a href="./cart.html">Cart</a></div>
-				<div class="re"><a href="./error.html">Contact us</a></div>
+				<a href="./index.html"><div class="re">Home</div></a>
+				<a href="./products.html"><div class="re">Products</div></a>
+				<a href="./cart.html"><div class="re">Cart</div></a>
+				<a href="./authors.html"><div class="re">Contact us</div></a>
 				<div class="re">
 					<svg onclick="dark()" id="change" height="30px" width="30px">
 						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
@@ -37,17 +37,18 @@
 				</div>
   </div>
 </div>
+
 			</div>
 			<div id="menu">
 				<div><input type="text" id="search"></div>
 				<div><button id="button1">Search</button></div>
 			</div>
 			<div class="flex">
-				<div class="re hide"><a href="./index.html">Home</a></div>
-				<div class="re hide"><a href="./error.html">About</a></div>
-				<div class="re hide" id="active"><a href="./products.html">Products</a></div>
-				<div class="re hide"><a href="./cart.html">Cart</a></div>
-				<div class="re hide"><a href="./error.html">Contact us</a></div>
+				<a href="./index.html"><div class="re hide">Home</div></a>
+				<a href="./error.html"><div class="re hide">About</div></a>
+				<a href="./products.html"><div class="re hide">Products</div></a>
+				<a href="./cart.html"><div class="re hide">Cart</div></a>
+				<a href="./authors.html"><div class="re hide">Contact us</div></a>
 				<div class="re hide">
 					<svg onclick="dark()" id="change" height="30px" width="30px">
 						<circle class="y" cx="15" cy="10" r="10" fill="purple"/>	
@@ -57,6 +58,7 @@
 			</div>
 
 		</navbar>
+
 		<div style="align-self:center;align-content:center;text-align:center;height:400px;padding-top:100px;font-family:Raleway,sans-serif">
 			<h1>
 				Error 404 
@@ -86,6 +88,13 @@
 					document.querySelector("body").classList.replace("light","dark");
 					document.querySelector("#foot-light").id="foot-dark";
 					document.querySelector(".offcanvas").classList.add("dark");
+					document.querySelectorAll("#active")[0].id="active-dark";
+					document.querySelectorAll("#active")[0].id="active-dark";
+					document.querySelectorAll(".re").forEach(an);
+					function an(item)
+					{
+							item.classList.add("an")
+					}
 					q=1;
 				}
 			else
@@ -97,6 +106,13 @@
 						document.querySelector("body").classList.replace("dark","light");
 						document.querySelector("#foot-dark").id="foot-light";
 						document.querySelector(".offcanvas").classList.remove("dark");
+						document.querySelectorAll("#active-dark")[0].id="active";
+						document.querySelectorAll("#active-dark")[0].id="active";
+						document.querySelectorAll(".re").forEach(an2);
+					function an2(item)
+					{
+							item.classList.remove("an")
+					}
 						q=0;
 				}
 

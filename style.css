@@ -7,11 +7,6 @@ a
 	text-decoration: none;
 	color:black;
 }
-a .dark
-{
-	text-decoration: none;
-	color:white; 
-}
 .product h1
 {
 	font-size:1.5rem;
@@ -59,9 +54,17 @@ navbar
 	display:flex;
 	flex-wrap: wrap;
 }
+.small
+{
+	width:600px;
+}
 .re
 {
 	padding-left: 20px;
+}
+.an
+{
+	color:white;
 }
 #active
 {
